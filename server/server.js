@@ -4,8 +4,6 @@ const proxy = require('http-proxy-middleware');
 const app = express();
 const port = 3000;
 
-// const apiProxy = proxy('/api')
-
 app.use('/', express.static(path.join(__dirname, '../public')));
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
